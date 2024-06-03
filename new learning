@@ -1,0 +1,283 @@
+selectors multiple property k saath bhi work krte hi
+
+hl,h2,h3 {
+color: red;
+}
+
+css me jo chiz baad me aati hi uski jyada priority hi, 
+example
+style internal wali humne stylesheet wali line se pehli likhi hi to uski less priority hi.
+but inline styling ki highest prriority hoti hi.                
+
+aigment parent k hissab se change hota hi.
+
+text decoration se under line overline through the line, select ki jaati hi
+
+jo hum multiple font family select krte hi, usme hum multiple options rakhte hi, kyuki saare browsers saari language nahi support krte,
+so agar ek nayi chali to dusri wali chl aayegi.
+
+96px = 1inch
+
+1hr 46 min.
+
+line height
+matlab ek line ko kitna space milega
+
+text transform --> uppercase, capitalize(har work ka first capital)
+lowercase, none.
+
+Level - 2:--
+
+Box Model css: har content ko hum boxes ke form me visualize kr sakte hi
+
+content ke charo taraf padding, padding and content ko gherte hue border.
+border ke bahar aur chizo se disrtance margin.
+ek space and dusre space k beech ka distance bhar border border se.
+
+height : content ka addrress hi. no ki boder ke ander ka , border ke ander content plus padding hota hi.
+by default use utna hi height milta hi , jitna uska content hota hi.
+
+border
+border width -> kitna chauda chahiye
+borderstyle -> solid, dashede , dotted, double,
+border color-> 
+
+border ki 3no properties ko ek saath sorthand me likh sakte hi.
+border : 2px solid black;
+
+text align--> 
+
+
+border radius -->  two ways to deffine.
+10 px; jitna bada hoga utne radius ka mera border defined hoga
+50%;//
+
+creating circle--> jab bhi height and width same ho aur hum border radius 50% kr de to wo circle bn jaayega.
+
+padding: border aur content k beech ka area padding-left,right,top,bottom
+shorthand
+padding : 50jpx; from all side
+padding: 1px 2px 3px 4px;// top right bottom left --> clockwise.
+
+margin : area btw two boxes;
+also top right bottom padding-left
+
+in chrome padding is highlighted with green , orange is margin.
+
+display property:
+block takes whole line and start with new line
+while inline takes that much line and start with same line
+
+rgba
+a - opacity 0- 1 value
+
+visibility hidden: 
+
+
+we can add symbol in html text , by simply searcch its value on internet and copy paste.
+
+
+level 3
+units in css.
+absolute unit - those are fixed everywher : - inch , cm ,mm,px
+relative unit, %,em,rem
+relative to parent.
+
+% size as relative to element's prroperty.
+
+ex - margin-left : 10%; so if parent is 100 px wide , then the value become 10px. 
+
+em --> 1 em , relative to font size of parent
+in case of width it took his case itself.
+
+rem : rootem, sabse bahar wale element ke relative.
+
+vh: browser ki jitni height hi , utni height.
+vw ; jitni browserki width hi uske comparision me.
+relative to viewport or browser height.
+
+
+3hr 15 min
+https://www.youtube.com/watch?v=ESnrn1kAD4E
+
+day 3. i will complete today only.
+
+position property:
+static : by default saare static hi hotee hi
+
+relative
+agar iski position me koi change aayega to wo box ke relative hoga.
+
+absolute: positioned relative its closest positioned ancestor(removed from the flow)
+remove from flow , matlab div ab alag se aayega wha se hat gya hi
+
+fixed: relative to browserfooter aur headers ke taur pr use krte hi
+nab bar ko hum isko use krke create krte hi
+
+sticky: positioned based on user's scrroll position
+jab hum scroll krte hi tab iski position  fixed ho jati hi , jab ye diheyga 
+matlab humne ise koi position de rakhi hi , jab hum scroll krege to ye waha jaake fix ho jaayega
+
+z index : 
+by defaut  pehle wala jo likha gya hi wo niche aayega , jo baad me aaya wo upar aayega
+jab do divs overlap krenge we can control, ki konsa div upar dikhega aur konsa niche dikhega.
+default 0 hota hijitna bada positive value de di jaayegi utna priority hoti hi
+-ve value denge to less priority hogi.
+iska naama 3d geometry se aaya hi jaha z axis ko upar aur neeche la sakte hijitna
+
+top property , jab humhe document ke top se kuch distance dena hoga
+bottom, left right ye sab sab static pr work nhi kregi
+zindex ko static me set nhi kr sakte 
+
+agar whi hum relative me change krenge , suppose humne top ko 10px kiya to cureent
+ top se 10 px shift ho jaayega , current shift se now shift ke beecch me 10px ka gap aa jaayega
+ isse hum overlapping boxex create kr sakte hi
+
+
+ setting a background image...
+ unsplash.com free website for photo
+ backgroung-image: url("...");
+
+ eise use krenge to picture poore backgroung me aayegi, aur wo fat jaayegi
+
+ background-size property
+ -cover : ab mi jitne area ke ander daalna chahta hun to utne me ye khud ko cover kr legi poori tarah fit ho jayegi 
+ no empty space, but might be poori pic na aaye
+ - contain -> fit aa jaye lekin priority hogi ki image poori tarah visible ho
+ repeated image bhi aa sakti hi
+ hum repeat se bacha sakte hi ek aur property set krke
+ background-repeat : no repeat krke
+
+ - auto jitni aa rhi hoti hi utni hi aati hi, default
+
+
+ level - 4
+ flexbox-> flexible box layout
+ it is a 1d layout method for arranging items row or column
+
+ display : flex ;
+ se wo flex  box bn jata hi
+ flex itemscrooss axis, main axis always perpendicular to each other. 
+
+ flex-direction : 
+ -row: default hoti hi, jo main axis hoga wo row hoga , sableft to right arrange ho jaayege.
+ - row-reverse: main axis humari horizontal to hogi but iss bar sare item right to left honge.
+
+ - column: sab vertically arrange honge , top to bottom
+main axis: top to bottom
+
+flex-box
+- ki specail property sare divs apne aapko arrange kr lenge aur aram se khudko parent div me fit kr lenege
+by default ye container me rehne ki koshish krenge jabtk inka content allow krta hi.
+suppose inka text bada hi to wo khud hi automatically kuch to bahar aa jayega.
+
+
+justify content properties in flex
+alignment along the main axis.
+- flex-start: main axis ka start
+- fles - end : main axis ka and, arrangement shift hota hi , reverse nhi hota hi.
+- centre : come in centre of main axis
+- space-around: it works jab humare container me extra space bach jaati hi.
+to ye space ko distribute kr deta hi
+- space-between: me extra spaces ko divs ke beech me sett kr deta
+- space-evenly: evenly me around aur beecch me equally distribute kr deta
+
+align-content: 
+alighnment of space 
+contenet on in multiple line
+
+flex wrap: 
+
+
+highest property, settled inside properties
+align self: indvidual khud ko flex krta hi , highest properties.
+
+flex grow
+
+flex shrink: if space is less , element will be shrink. due to flex property
+also we could shrink a particular element with more speed by this. 
+shrink factor dete hi 2 , means at double pace, .5 is at half pace.
+
+
+
+# media queries
+responsive, matab ki wo alag alg devices pr kaisi dikhegi
+
+
+suppose we want when our screen size become 600 px then our div color become red.
+
+@media (width : 600px){
+    background color: red;
+}
+
+if we want that beyond certain limit our website color would be green , or below certain limit it should be grreen
+
+min width property if used then minimum ke upar property would always be changeab;e
+
+@media((min width: 200 px) and (max width : 600 pcx) ){
+
+}
+
+#level 5
+
+transition property
+normal state & hover state, or active state.
+
+har element ke ltarget , focus within, and few other , which we can see in style section or at w3 schoool websit
+ye multiple states exist krti hi, like jab hum hover kre to uski kuch property change ho,
+like jab hhum button dab ke rakhe to kuch property change ho active state,
+
+for this we write pseudoclass
+// syntax for sudocode
+div : hover{
+    background-color: red;
+    color: white;
+}
+
+transition. help krta hi jab ek state se dusre state pr ja rha hi to kaise jaaayega.
+4 property : 
+transition property
+transition duration
+transition timing function // could check on mdn 
+transition delay
+
+ye saari property hume div ke ander likhni hoti na ki pseudo class ke ander
+
+tramsition shorthand
+property name | duration | timing-function| delay
+transition : font-size 2s ease-in-out 0.2s
+
+
+#css transform
+used to apply 2d & 3d transformations to an element
+rotate: 
+transform: rotate(45deg);
+rotateX : , rotaateY: rotateZ:
+
+
+scale property: in pdf
+x and y axis ke along ya dono ko ek saath bhi kr sakte hi.
+
+
+translate : x and y plus dono pe kr sakte hi, shift ho jaata hi.
+
+skew: dono corner se pakadke opposite side ki taaf kheechna 
+
+#animation
+
+@keyframe myName{
+    from{font-size: 20px;}
+    to{font-size: 40px;}
+}
+
+upar humne template bna diya hi,
+
+animation name
+animation duration
+animation time function
+animation delay
+animation count
+animation direction: normal 
+shorthand
+
+
